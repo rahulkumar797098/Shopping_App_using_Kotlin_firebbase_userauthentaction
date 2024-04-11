@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    >
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        >
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/shopping_bag_cart_svgrepo_com"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="City Zone"
+            android:textColor="#FF7043"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Your Account"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do you have an account? Login "
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        />
+
+
+    <EditText
+        android:id="@+id/edtFirstNameRegister"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="First Name "
+        android:gravity="center"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="20dp"
+        android:textColorHint="#CE000000"
+
+        />
+
+    <EditText
+        android:id="@+id/edtLastNameRegister"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+
+        android:gravity="center"
+        android:hint="Last Name"
+        android:textColorHint="#CE000000" />
+
+
+    <EditText
+        android:id="@+id/edtEmailRegister"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Email "
+        android:gravity="center"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="20dp"
+        android:textColorHint="#CE000000"
+
+        />
+
+    <EditText
+        android:id="@+id/edtPasswordRegister"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+
+        android:gravity="center"
+        android:hint="Password"
+        android:textColorHint="#CE000000" />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonRegisterRegister"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+
+        >
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/facebook_color_svgrepo_com__1_"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            app:backgroundTint="#DECFF8"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:text="Facebook" />
+
+
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/gmail"
+            android:layout_weight="1"
+            app:backgroundTint="#DECFF8"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:text="Google" />
+    </LinearLayout>
+
+
+</LinearLayout>

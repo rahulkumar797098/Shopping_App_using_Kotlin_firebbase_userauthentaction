@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "362900515481",
+    "project_id": "city-8b1d3",
+    "storage_bucket": "city-8b1d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:362900515481:android:daada431f0d20090ae6608",
+        "android_client_info": {
+          "package_name": "com.example.city"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHCEAt9Tj5GTw0L2XKcKo9ruGj7jBc0UE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
