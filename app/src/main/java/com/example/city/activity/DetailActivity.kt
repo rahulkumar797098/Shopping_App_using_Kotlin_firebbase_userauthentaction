@@ -1,5 +1,6 @@
 package com.example.city.activity
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.activity.enableEdgeToEdge
@@ -8,10 +9,10 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.city.Adapter.ColorAdapter
 import com.example.city.Adapter.SizeAdapter
 import com.example.city.Adapter.SliderAdapter
-import com.example.city.Helper.ManagmentCart
 import com.example.city.Model.RecommendationModel
 import com.example.city.Model.SliderModel
 import com.example.city.databinding.ActivityDetailBinding
+import com.example.project1762.Helper.ManagmentCart
 
 class DetailActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDetailBinding
@@ -70,14 +71,16 @@ class DetailActivity : AppCompatActivity() {
         binding.descriptionTxt.text = item.description
         binding.priceTxt.text = "$" + item.price
         binding.ratingTxt.text = "${item.rating} Rating"
-        binding.addToCartButton.setOnClickListener {
+        binding.addToCartBtnDE.setOnClickListener {
             item.numberInCart = numberOrder
             managmentCart.insertFood(item)
         }
         binding.backBtn.setOnClickListener { finish()
 
         }
-        binding.cartBtn.setOnClickListener {  }
+        binding.cartBtnDE.setOnClickListener {
+           startActivity(Intent(this,CartActivity::class.java))
+        }
 
     }
 }

@@ -159,7 +159,7 @@
                 android:layout_margin="8dp"
                 >
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/cartBtn"
+                    android:id="@+id/cartBtnDE"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
@@ -172,7 +172,7 @@
                     android:layout_weight="1"
                     />
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/addToCartButton"
+                    android:id="@+id/addToCartBtnDE"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@android:style/Widget.Button"
@@ -183,9 +183,6 @@
                     android:textSize="20sp"
                     android:layout_margin="8dp"
                     android:layout_weight="1"/>
-
-
-
 
             </LinearLayout>
 

@@ -65,4 +65,7 @@ dependencies {
     implementation ("com.github.bumptech.glide:glide:4.16.0")
 
     implementation("com.google.code.gson:gson:2.8.8")
+
+    ////////////
+    implementation ("dev.romainguy:kotlin-math:1.5.3")
 }

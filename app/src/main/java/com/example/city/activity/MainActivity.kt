@@ -18,8 +18,6 @@ import com.example.city.ViewModel.MainViewModel
 import com.example.city.databinding.ActivityMainBinding
 
 
-
-
 class MainActivity : AppCompatActivity() {
     private val viewModel = MainViewModel()
     private lateinit var binding: ActivityMainBinding
@@ -32,6 +30,11 @@ class MainActivity : AppCompatActivity() {
         initBanner()
         iniBrand()
         iniRecommendation()
+        initBottomMenu()
+    }
+
+    private fun initBottomMenu() {
+//        binding.cartbtn.setOnClickListener { startActivity (Intent(this@MainActivity,CartActivity::class.java)) }
     }
 
     ///////////...........banner............/////////
