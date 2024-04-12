@@ -68,4 +68,6 @@ dependencies {
 
     ////////////
     implementation ("dev.romainguy:kotlin-math:1.5.3")
+
+    implementation( "com.airbnb.android:lottie:6.4.0")
 }

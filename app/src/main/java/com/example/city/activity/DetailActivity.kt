@@ -1,6 +1,6 @@
 package com.example.city.activity
 
-import android.content.Intent
+import android.app.Dialog
 import android.os.Bundle
 import android.view.View
 import androidx.activity.enableEdgeToEdge
@@ -11,6 +11,7 @@ import com.example.city.Adapter.SizeAdapter
 import com.example.city.Adapter.SliderAdapter
 import com.example.city.Model.RecommendationModel
 import com.example.city.Model.SliderModel
+import com.example.city.R
 import com.example.city.databinding.ActivityDetailBinding
 import com.example.project1762.Helper.ManagmentCart
 
@@ -74,13 +75,44 @@ class DetailActivity : AppCompatActivity() {
         binding.addToCartBtnDE.setOnClickListener {
             item.numberInCart = numberOrder
             managmentCart.insertFood(item)
+            showCustomDialog()
+
+            ////
         }
         binding.backBtn.setOnClickListener { finish()
 
         }
         binding.cartBtnDE.setOnClickListener {
-           startActivity(Intent(this,CartActivity::class.java))
+//           startActivity(Intent(this,CartActivity::class.java))
+            showCustomDialogCart()
         }
 
     }
-}
+
+    //////////////////////  Dialog Box Show When Click on Buy Button
+    private fun showCustomDialog() {
+        // Create a dialog object
+        val dialog = Dialog(this)
+
+        // Set the custom dialog layout
+        dialog.setContentView(R.layout.activity_order_success_custom_dialog_box)
+
+        // Display the dialog
+        dialog.show()
+
+
+        }
+
+    ///////////////////
+
+    private fun showCustomDialogCart() {
+        // Create a dialog object
+        val dialog = Dialog(this)
+
+        // Set the custom dialog layout
+        dialog.setContentView(R.layout.activity_cart)
+        // Display the dialog
+        dialog.show()
+    }
+
+    }
